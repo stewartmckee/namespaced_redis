@@ -3,10 +3,12 @@ require 'redis'
 
 class NamespacedRedis
   def initialize(redis_options={}, namespace="")
+    puts "asl;jglksadg"
     @redis = Redis.new(redis_options)
+    puts @redis.inspect
     @namespace = namespace
   end
-
+  
   def sismember(key, member)
     @redis.sismember namespaced(key), member
   end

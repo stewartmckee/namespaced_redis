@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Stewart McKee"]
   s.email       = ["stewart@theizone.co.uk"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = "Adds a namespace to redis"
+  s.description = "Returns a namespaced version of redis"
 
   s.rubyforge_project = "namespaced_redis"
 
