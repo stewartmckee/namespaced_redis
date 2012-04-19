@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "namespaced_redis/version"
+require "namespaced_redis"
 
 Gem::Specification.new do |s|
   s.name        = "namespaced_redis"
@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+   s.add_runtime_dependency "redis"
 end
