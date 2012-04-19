@@ -1,11 +1,9 @@
-require "namespaced_redis/version"
-require 'redis'
-
 class NamespacedRedis
+
+  VERSION = "0.0.2"
+
   def initialize(redis_options={}, namespace="")
-    puts "asl;jglksadg"
     @redis = Redis.new(redis_options)
-    puts @redis.inspect
     @namespace = namespace
   end
   
