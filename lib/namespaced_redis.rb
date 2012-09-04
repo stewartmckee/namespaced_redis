@@ -1,10 +1,14 @@
 class NamespacedRedis
 
-  VERSION = "0.0.2"
+  VERSION = "1.0.2"
 
   def initialize(redis_options={}, namespace="")
     @redis = Redis.new(redis_options)
     @namespace = namespace
+  end
+  
+  def hmset(key, *attrs)
+    @redis.hmset(namespaced(key), *attrs)
   end
   
   def sismember(key, member)
