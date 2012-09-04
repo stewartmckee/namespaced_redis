@@ -5,7 +5,7 @@ The namespaced_redis gem is a wrapper gem for the standard redis gem that prepen
 Usage:
 
 pre. redis_options = {:host => "localhost", :port => 6379}
-pre. @redis = NamespacedRedis.new(redis_options, "your-unique-id")
+     @redis = NamespacedRedis.new(redis_options, "your-unique-id")
 
 redis_options is a hash that is passed into the redis object and is unaltered as it is passed through, so please refer to the redis gem for details of this.  The second parameter is a unique id set by you, I would suggest that this contains a unique id for the data (possibly the id of the object that the data relates to) and also the version of your application, as the data in redis may remain after an upgrade and may be in an invalid format.
 
