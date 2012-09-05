@@ -1,6 +1,6 @@
 class NamespacedRedis
 
-  VERSION = "1.0.3"
+  VERSION = "1.0.4"
 
   def initialize(redis_options={}, namespace="")
     @@redis ||= Redis.new(redis_options)
