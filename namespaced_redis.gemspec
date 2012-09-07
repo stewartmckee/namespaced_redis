@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = NamespacedRedis::VERSION
   s.authors     = ["Stewart McKee"]
   s.email       = ["stewart@theizone.co.uk"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/stewartmckee/namespaced_redis"
   s.summary     = "Adds a namespace to redis"
   s.description = "Returns a namespaced version of redis"
 
